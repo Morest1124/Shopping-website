@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Blade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Binary Blade Shoes</h1>
+    <nav>
+      <span id="menu-icon" onclick="openNav()">&#9776;</span>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Signup</a></li>
+      </ul>
+      <div id="sidenav" class="sidenav">
+        <span class="closebtn" onclick="closeNav()">&times;</span>
+        <a href="#home">Home</a>
+        <a href="products.html">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Signup</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <div class="carousel">
+        <div class="slides">
+          <img src="original.jpg" alt="Binary Blade Shoes Banner 1" class="slide">
+          <img src="shoe1.avif" alt="Binary Blade Shoes Banner 2" class="slide">
+          <img src="JH5445_04_standard.avif" alt="Binary Blade Shoes Banner 3" class="slide">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+      <h2>Welcome to Binary Blade Shoes</h2>
+      <p>Your one-stop shop for the best footwear in town. Explore our wide range of stylish and comfortable shoes for every occasion.</p>
+      <a href="products.html" class="cta-button">Shop Now</a>
+    </section>
+    <section id="features">
+      <h2>Why Choose Us?</h2>
+      <div class="features-list">
+        <div class="feature">
+          <h3>High Quality</h3>
+          <p>Our shoes are crafted with the finest materials to ensure durability and comfort.</p>
+        </div>
+        <div class="feature">
+          <h3>Affordable Prices</h3>
+          <p>We offer competitive pricing without compromising on quality.</p>
+        </div>
+        <div class="feature">
+          <h3>Fast Delivery</h3>
+          <p>Get your favorite shoes delivered to your doorstep quickly and hassle-free.</p>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <h2>What Our Customers Say</h2>
+      <blockquote>
+        <p>"Binary Blade Shoes has the best collection of footwear. I love their quality and service!"</p>
+        <cite>- Happy Customer</cite>
+      </blockquote>
+    </section>
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="product-list"></div>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>At Binary Blade Shoes, we are passionate about providing high-quality footwear for every occasion.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Binary Blade Shoes. All rights reserved.</p>
+  </footer>
+  <script src="scripts.js"></script>
+  <script>
+    function openNav() {
+      document.getElementById('sidenav').style.width = '250px';
+    }
+    function closeNav() {
+      document.getElementById('sidenav').style.width = '0';
+    }
+  </script>
+</body>
+</html>

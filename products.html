@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products - Binary Blade Shoes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Binary Blade Shoes</h1>
+    <nav>
+      <span id="menu-icon" onclick="openNav()">&#9776;</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="cart.html">View Cart</a></li>
+      </ul>
+      <div id="sidenav" class="sidenav">
+        <span class="closebtn" onclick="closeNav()">&times;</span>
+        <a href="index.html">Home</a>
+        <a href="#products">Products</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Signup</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-images">
+            <a href="shoe-details.html#running-shoes">
+              <img src="shoe1.avif" alt="Running Shoes - Front View">
+            </a>
+          </div>
+          <h3>Running Shoes</h3>
+          <p>High-performance running shoes for all terrains.</p>
+          <p class="price">R 2,800</p>
+          <div class="product-actions">
+            <button class="buy-button" onclick="addToCart(1, 'shoe1.avif', 2800)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-images">
+            <a href="shoe-details.html#casual-sneakers">
+              <img src="JH5445_04_standard.avif" alt="Casual Sneakers - Front View">
+            </a>
+          </div>
+          <h3>Casual Sneakers</h3>
+          <p>Stylish and comfortable sneakers for everyday wear.</p>
+          <p class="price">R 1,700</p>
+          <div class="product-actions">
+            <button class="buy-button" onclick="addToCart(2, 'JH5445_04_standard.avif', 1700)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-images">
+            <a href="shoe-details.html#formal-shoes">
+              <img src="original.jpg" alt="Formal Shoes - Front View">
+            </a>
+          </div>
+          <h3>Formal Shoes</h3>
+          <p>Elegant formal shoes for business and special occasions.</p>
+          <p class="price">R 2,750</p>
+          <div class="product-actions">
+            <button class="buy-button" onclick="addToCart(3, 'original.jpg', 2750)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-images">
+            <a href="shoe-details.html#sports-shoes">
+              <img src="png.avif" alt="Sports Shoes - Front View">
+            </a>
+          </div>
+          <h3>Sports Shoes</h3>
+          <p>Lightweight and durable shoes for all your sports activities.</p>
+          <p class="price">R 2,000</p>
+          <div class="product-actions">
+            <button class="buy-button" onclick="addToCart(4, 'png.avif', 2000)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-images">
+            <a href="shoe-details.html#boots">
+              <img src="boot.webp" alt="Boots - Front View">
+            </a>
+          </div>
+          <h3>Boots</h3>
+          <p>Stylish boots perfect for outdoor adventures and casual wear.</p>
+          <p class="price">R 2,500</p>
+          <div class="product-actions">
+            <button class="buy-button" onclick="addToCart(5, 'boot.webp', 2500)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-images">
+            <a href="shoe-details.html#sandals">
+              <img src="Gucci.webp" alt="Sandals - Front View">
+            </a>
+          </div>
+          <h3>Gucci Sandals</h3>
+          <p>Comfortable and breathable sandals for warm weather.</p>
+          <p class="price">R 13,100</p>
+          <div class="product-actions">
+            <button class="buy-button" onclick="addToCart(6, 'Gucci.webp', 13100)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-images">
+            <a href="shoe-details.html#loafers">
+              <img src="loafer.webp" alt="Loafers - Front View">
+            </a>
+          </div>
+          <h3>Loafer</h3>
+          <p>Classic loafers for a smart and casual look.</p>
+          <p class="price">R 2,700</p>
+          <div class="product-actions">
+            <button class="buy-button" onclick="addToCart(7, 'loafer.webp', 2700)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-images">
+            <a href="shoe-details.html#slippers">
+              <img src="image.avif" alt="Slippers - Front View">
+            </a>
+          </div>
+          <h3>Slippers</h3>
+          <p>Soft and cozy slippers for indoor comfort.</p>
+          <p class="price">R 11,500</p>
+          <div class="product-actions">
+            <button class="buy-button" onclick="addToCart(8, 'image.avif', 11500)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-images">
+            <a href="shoe-details.html#trail-running-shoes">
+              <img src="image (1).webp" alt="Trail Running Shoes - Front View">
+            </a>
+          </div>
+          <h3>Trail Running Shoes</h3>
+          <p>Designed for rugged trails with superior grip and comfort.</p>
+          <p class="price">R 2,400</p>
+          <div class="product-actions">
+            <button class="buy-button" onclick="addToCart(9, 'image (1).webp', 2400)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-images">
+            <a href="shoe-details.html#flip-flops">
+              <img src="flip.webp" alt="Slip-On Shoes - Front View">
+            </a>
+          </div>
+          <h3>Flip-Flops</h3>
+          <p>Lightweight and comfortable flip-flops for casual wear.</p>
+          <p class="price">R 150</p>
+          <div class="product-actions">
+            <button class="buy-button" onclick="addToCart(10, 'flip.webp', 150)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Binary Blade Shoes. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleImages(mainImage) {
+      const hiddenImages = mainImage.nextElementSibling;
+      if (hiddenImages.style.display === "none") {
+        hiddenImages.style.display = "flex";
+      } else {
+        hiddenImages.style.display = "none";
+      }
+    }
+
+    function addToCart(productId, imageUrl, price) {
+      // Add product to cart logic 
+      alert("Product added to cart!");
+    }
+
+    function viewCart() {
+      window.location.href = "cart.html";
+    }
+
+    function notView() {
+      // Not view action logic 
+      alert("Not View action triggered");
+    }
+
+    function openNav() {
+      document.getElementById('sidenav').style.width = '250px';
+    }
+
+    function closeNav() {
+      document.getElementById('sidenav').style.width = '0';
+    }
+  </script>
+</body>
+</html>
